@@ -27,10 +27,6 @@ Additional UX details include thoughtful line heights, law of proximity, contras
 
 ---
 
-
-
----
-
 ## 🛠️ Technical Stack
 
 - **HTML5** - Semantic markup
@@ -46,12 +42,3 @@ Additional UX details include thoughtful line heights, law of proximity, contras
 Visit the live website: **https://athletefuel.netlify.app/**
 
 ---
-
-## 👨‍💻 Developer
-
-**Nishanth Attarki**  
-Transforming generic food delivery into athletic performance nutrition.
-
----
-
-**Built with 💪 for athletes by athletes**
