@@ -27,22 +27,7 @@ Additional UX details include thoughtful line heights, law of proximity, contras
 
 ---
 
-## 📸 Screenshots
 
-### Hero Section
-Athletic performance-focused hero with blue theme, compelling CTA, and athlete statistics
-
-### Training Goals & Performance Meals
-Specialized nutrition programs with macro-optimized meal options
-
-### Athlete Testimonials & Gallery
-Real success stories with quantifiable results and performance meal photography
-
-### Pricing Plans
-Two-tier subscription model with advanced performance tracking features
-
-### CTA & Footer
-Strong call-to-action with training goal selection and comprehensive footer navigation
 
 ---
 
