@@ -1,6 +1,6 @@
-console.log("Hello World!");
+console.log("AthletesFuel Performance Nutrition System");
 
-const myName = "Akheel Muhammed";
+const myName = "Nishanth Attarki";
 const h1 = document.querySelector(".heading-primary");
 console.log(myName);
 console.log(h1);
