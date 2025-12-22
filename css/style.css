@@ -6,8 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #1E1B4B 100%);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.3), 0 0 40px rgba(236, 72, 153, 0.1);
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
@@ -44,7 +44,8 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #FF6B35;
+  color: #06B6D4;
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
 }
 
 .main-nav-link::after {
@@ -54,8 +55,9 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #FF6B35;
+  background: linear-gradient(90deg, #06B6D4, #A855F7);
   transition: width 0.3s;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
 }
 
 .main-nav-link:hover::after {
@@ -67,15 +69,16 @@
   padding: 1.2rem 2.4rem;
   border-radius: 25px;
   color: #fff;
-  background-color: #FF6B35;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  background: linear-gradient(135deg, #A855F7 0%, #EC4899 100%);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4), 0 0 20px rgba(236, 72, 153, 0.2);
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #E85A2A;
+  background: linear-gradient(135deg, #7C3AED 0%, #DB2777 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6), 0 0 30px rgba(236, 72, 153, 0.3);
+  text-shadow: none;
 }
 
 .main-nav-link.nav-cta::after {
@@ -138,14 +141,14 @@
   right: -10%;
   width: 60%;
   height: 120%;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, rgba(6, 182, 212, 0.15) 50%, transparent 70%);
   border-radius: 50%;
   animation: pulse 8s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.15; }
-  50% { transform: scale(1.1); opacity: 0.25; }
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.15); opacity: 0.3; }
 }
 
 .hero {
@@ -168,13 +171,13 @@
 
 .hero-text-box .heading-primary {
   color: #fff;
-  text-shadow: 0 0 20px rgba(255, 107, 53, 0.3), 0 0 40px rgba(255, 107, 53, 0.2);
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.4), 0 0 40px rgba(6, 182, 212, 0.3);
   animation: glow 3s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-  from { text-shadow: 0 0 20px rgba(255, 107, 53, 0.3), 0 0 40px rgba(255, 107, 53, 0.2); }
-  to { text-shadow: 0 0 30px rgba(255, 107, 53, 0.5), 0 0 60px rgba(255, 107, 53, 0.3), 0 0 80px rgba(255, 107, 53, 0.1); }
+  from { text-shadow: 0 0 20px rgba(168, 85, 247, 0.4), 0 0 40px rgba(6, 182, 212, 0.3); }
+  to { text-shadow: 0 0 30px rgba(168, 85, 247, 0.6), 0 0 60px rgba(236, 72, 153, 0.4), 0 0 80px rgba(6, 182, 212, 0.2); }
 }
 
 .hero-img {

@@ -23,15 +23,17 @@ Large: 1.8
 
 --- 02 COLORS
 
-- Primary: #FF6B35 (Energy Orange)
+- Primary: #A855F7 (Electric Purple)
+- Secondary: #06B6D4 (Cyber Cyan)
+- Accent: #EC4899 (Hot Pink)
 - Tints:
-#FFF4F0 (Light Peach)
-#FFD4C4 (Soft Orange)
-#FF8C5A (Bright Orange)
+#F5F3FF (Ultra Light Purple)
+#DDD6FE (Soft Purple)
+#06B6D4 (Cyan)
 
 - Shades: 
-#E85A2A (Deep Orange)
-#1A1A1A (Charcoal Black)
+#7C3AED (Deep Purple)
+#1E1B4B (Dark Navy Purple)
 
 - Accents:
 - Greys
@@ -156,8 +158,9 @@ body {
   left: 0;
   width: 120px;
   height: 6px;
-  background: linear-gradient(90deg, #FF6B35, #E85A2A);
+  background: linear-gradient(90deg, #A855F7, #EC4899, #06B6D4);
   border-radius: 3px;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
 }
 
 .heading-secondary {
@@ -165,12 +168,14 @@ body {
   line-height: 1.15;
   margin-bottom: 9.6rem;
   font-weight: 900;
-  background: linear-gradient(135deg, #1A1A1A 0%, #FF6B35 50%, #1A1A1A 100%);
+  background: linear-gradient(135deg, #A855F7 0%, #EC4899 50%, #06B6D4 100%);
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   position: relative;
   display: inline-block;
+  animation: gradientMove 5s ease infinite;
 }
 
 .heading-tertiary {
@@ -184,15 +189,22 @@ body {
   font-size: 1.4rem;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(135deg, #FF6B35 0%, #E85A2A 100%);
+  background: linear-gradient(135deg, #A855F7 0%, #EC4899 50%, #06B6D4 100%);
+  background-size: 200% 200%;
   text-transform: uppercase;
   margin-bottom: 2rem;
   letter-spacing: 3px;
   padding: 1rem 3rem;
   border-radius: 50px;
-  box-shadow: 0 5px 20px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 5px 20px rgba(168, 85, 247, 0.4), 0 0 30px rgba(236, 72, 153, 0.2);
   position: relative;
   overflow: hidden;
+  animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 .subheading::before {
@@ -202,8 +214,8 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  animation: shimmer 3s infinite;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {
@@ -254,56 +266,56 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #FF6B35;
+  background: linear-gradient(135deg, #A855F7 0%, #EC4899 100%);
   color: #fff;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #E85A2A;
+  background: linear-gradient(135deg, #7C3AED 0%, #DB2777 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
 }
 
 .btn--outline:link,
 .btn--outline:visited {
   background-color: transparent;
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #06B6D4;
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #fff;
-  color: #FF6B35;
+  background: linear-gradient(135deg, #06B6D4 0%, #A855F7 100%);
+  color: #fff;
   transform: translateY(-2px);
-
-  /* Trick to add border inside */
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.5);
 }
 
 .btn--form {
-  background-color: #1A1A1A;
+  background: linear-gradient(135deg, #06B6D4 0%, #A855F7 100%);
   color: #fff;
   align-self: end;
   padding: 1.2rem;
   font-weight: 700;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+  border: none;
 }
 
 .btn--form:hover {
-  background-color: #fff;
-  color: #1A1A1A;
+  background: linear-gradient(135deg, #0891B2 0%, #7C3AED 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  color: #FF6B35;
+  color: #06B6D4;
   text-decoration: none;
   border-bottom: 2px solid currentColor;
   padding-bottom: 2px;
@@ -313,9 +325,10 @@ body {
 
 .link:hover,
 .link:active {
-  color: #E85A2A;
+  color: #A855F7;
   border-bottom: 2px solid transparent;
   transform: translateX(5px);
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
 }
 
 .list {
@@ -336,15 +349,16 @@ body {
 .list-icon {
   width: 3rem;
   height: 3rem;
-  color: #FF6B35;
-  background-color: #FFF4F0;
+  color: #A855F7;
+  background: linear-gradient(135deg, #F5F3FF, #DDD6FE);
   border-radius: 50%;
   padding: 0.6rem;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
 }
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(255, 107, 53, 0.4);
+  box-shadow: 0 0 0 0.8rem rgba(168, 85, 247, 0.4), 0 0 20px rgba(236, 72, 153, 0.3);
 }
 
 /* HELPER/SETTINGS CLASSES */
